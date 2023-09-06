@@ -1,0 +1,15 @@
+
+.asko-firstContent{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asko-firstContent-paragraph{
+    flex: 2;
+}
+.asko-firstContent-download{
+    flex: 1;
+}
+.asko-firstContent-paragraph p {
+    padding-top: 20px;
+}
