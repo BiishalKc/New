@@ -37,18 +37,84 @@ nav a {
 .asko-firstContent {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .asko-firstContent-paragraph {
   flex: 2;
-}
-
-.asko-firstContent-download {
-  flex: 1;
+  margin-right: 5%;
 }
 
 .asko-firstContent-paragraph p {
   padding-top: 20px;
+  font-size: 18px;
+}
+
+.asko-firstContent-download {
+  flex: 1;
+  background-color: #ebebeb;
+  margin: 5% 0;
+  border-radius: 10px;
+}
+.asko-firstContent-download i {
+  font-size: 30px;
+}
+
+.asko-content-box {
+  margin: 40px;
+}
+.asko-content-box h2 {
+  font-size: 15px;
+  padding: 15px 0 5px 0;
+}
+.asko-content-box p {
+  font-size: 13px;
+}
+
+.asko-firstContent-icon {
+  display: flex;
+  justify-content: space-between;
+}
+.asko-firstContent-icon .icon1 {
+  display: flex;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px;
+}
+.asko-firstContent-icon .icon1 i {
+  font-size: 25px;
+}
+.asko-firstContent-icon .icon1 .download .p1 {
+  font-size: 8px;
+}
+.asko-firstContent-icon .icon1 .download .p2 {
+  font-size: 15px;
+}
+.asko-firstContent-icon .icon2 {
+  display: flex;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px;
+}
+.asko-firstContent-icon .icon2 i {
+  font-size: 25px;
+}
+.asko-firstContent-icon .icon2 .download .p1 {
+  font-size: 8px;
+}
+.asko-firstContent-icon .icon2 .download .p2 {
+  font-size: 15px;
+}
+
+.asko-second-image-content p {
+  position: absolute;
+  color: #fff;
+  top: 76rem;
+  left: 46rem;
 }
 
 /*# sourceMappingURL=style.css.map */
