@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .wrapper-class {
@@ -26,7 +27,7 @@ nav ul {
   list-style: none;
 }
 nav li {
-  margin: 0 20px;
+  margin: 0 8px;
 }
 nav a {
   text-decoration: none;
@@ -34,87 +35,84 @@ nav a {
   padding: 8px 15px;
 }
 
-.asko-firstContent {
+.asko-main-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.asko-about-us {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
 }
 
-.asko-firstContent-paragraph {
-  flex: 2;
-  margin-right: 5%;
+.asko-about-us-columns {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-.asko-firstContent-paragraph p {
-  padding-top: 20px;
-  font-size: 18px;
+.asko-about-us-left-column {
+  width: 100%;
+}
+.asko-about-us-left-column p {
+  padding: 20px 0;
+  text-align: start;
 }
 
-.asko-firstContent-download {
+.asko-download-link-box {
+  width: 50%;
+  margin-top: 40px;
+  padding: 30px 30px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+}
+.asko-download-link-box p {
+  padding: 10px 0;
+}
+
+.asko-download-link {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+}
+.asko-download-link img {
+  padding-left: 10px;
+}
+
+.asko-temperature-precise-cooking-image img {
+  max-width: 100%;
+  height: auto;
+}
+.asko-temperature-precise-cooking-image p {
+  display: inline-block;
+  position: relative;
+  top: 16rem;
+  left: 45rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.asko-temperature-precise-cooking-about-content {
+  display: flex;
+}
+.asko-temperature-precise-cooking-about-content h2 {
   flex: 1;
-  background-color: #ebebeb;
-  margin: 5% 0;
-  border-radius: 10px;
 }
-.asko-firstContent-download i {
-  font-size: 30px;
+.asko-temperature-precise-cooking-about-content p {
+  flex: 4;
+  margin-right: 15%;
 }
 
-.asko-content-box {
-  margin: 40px;
-}
-.asko-content-box h2 {
-  font-size: 15px;
-  padding: 15px 0 5px 0;
-}
-.asko-content-box p {
-  font-size: 13px;
+.asko-guided-recipes {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-.asko-firstContent-icon {
-  display: flex;
-  justify-content: space-between;
-}
-.asko-firstContent-icon .icon1 {
-  display: flex;
-  margin-top: 20px;
-  padding: 5px;
-  background-color: #111;
-  color: #fff;
-  border-radius: 5px;
-}
-.asko-firstContent-icon .icon1 i {
-  font-size: 25px;
-}
-.asko-firstContent-icon .icon1 .download .p1 {
-  font-size: 8px;
-}
-.asko-firstContent-icon .icon1 .download .p2 {
-  font-size: 15px;
-}
-.asko-firstContent-icon .icon2 {
-  display: flex;
-  margin-top: 20px;
-  padding: 5px;
-  background-color: #111;
-  color: #fff;
-  border-radius: 5px;
-}
-.asko-firstContent-icon .icon2 i {
-  font-size: 25px;
-}
-.asko-firstContent-icon .icon2 .download .p1 {
-  font-size: 8px;
-}
-.asko-firstContent-icon .icon2 .download .p2 {
-  font-size: 15px;
-}
-
-.asko-second-image-content p {
-  position: absolute;
-  color: #fff;
-  top: 76rem;
-  left: 46rem;
+.asko-guided-recipes-image img {
+  width: fit-content;
 }
 
 /*# sourceMappingURL=style.css.map */

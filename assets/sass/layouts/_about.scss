@@ -1,0 +1,46 @@
+.asko-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.asko-about-us-columns {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.asko-about-us-left-column{
+    width: 100%;
+    p{
+        padding: 20px 0;
+        text-align: start;
+    }
+}
+
+.asko-download-link-box{
+    width: 50%;
+    margin-top: 40px;
+    padding: 30px 30px;
+    background-color: $thirdColor;
+    border-radius: 5px;
+    p{
+        padding: 10px 0;
+    }
+}
+
+.asko-download-link{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;  
+    img{
+        padding-left: 10px;
+    }
+}
+
+
+
+
+
+
