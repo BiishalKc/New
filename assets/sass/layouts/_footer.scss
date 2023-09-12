@@ -1,0 +1,16 @@
+footer{
+    .asko-logos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    p{
+        padding: 20px 0;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: $primaryColor;
+    }
+}

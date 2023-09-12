@@ -1,0 +1,33 @@
+.asko-premium-induction{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: $thirdColor;
+}
+
+
+.asko-premium-induction-content{
+    
+    padding-left: 10%;
+    p{
+        padding: 20px 0;
+        width: 80%
+    }
+}
+
+
+.asko-premium-induction-image{
+    img{
+        position: relative;
+        object-fit: cover;
+    }
+    p{
+        display: inline-block;
+        position: absolute;
+        top: 15rem;
+        left: 40rem;
+        color: $secondaryColor;
+        font-size: 20px;
+        z-index: 1;
+    }
+}

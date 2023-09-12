@@ -2,10 +2,35 @@
     display: flex;
     align-items: center;
     gap: 50px;
-
+    position: relative;
 }
 .asko-guided-recipes-image{
+    
     img{
-        width: fit-content;
+        object-fit: cover;
+    }
+    p{
+        display: inline-block;
+        position: absolute;
+        top: 25rem;
+        left: 35rem;
+        color: $secondaryColor;
+        font-size: 20px;
+        z-index: 1;
+    }
+}
+
+.asko-guided-recipes-content{
+    
+    .browse-recipes-btn{
+        margin-top: 20px;
+    }
+    
+    p{
+        padding: 20px 0;
+        width: 80%
+    }
+    .btn{
+        @include btn;
     }
 }

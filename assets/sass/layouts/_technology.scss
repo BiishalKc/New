@@ -1,0 +1,21 @@
+
+.asko-technology-content{
+    margin-top: 50px;
+    p{
+        padding-top: 25px;
+        width: 65%;
+    }
+    img{
+        max-width: 100%;
+        margin-left: 14rem;
+        object-fit: cover;
+    }
+}
+.asko-technology-image{
+    background-color: $thirdColor;
+    img{
+        max-width: 100%;
+        object-fit: cover;
+        padding-top: 5%;
+    }
+}

@@ -1,13 +1,16 @@
 @import "./helper/reset";
 @import "./helper/varables";
 @import "./helper/mixin";
+@import "./layouts/header";
 @import "./components/navbar";
 @import "./layouts/mainBanner";
 @import "./layouts/about";
-@import "./layouts/temperatureCookingImage";
-@import "./layouts/temperatureCookingAbout";
+@import "./layouts/temperatureCooking";
 @import "./layouts/guidedRecipes";
-
-
+@import "./layouts/premiumInduction";
+@import "./layouts/technology";
+@import "./layouts/imageGallery";
+@import "./layouts/startCooking";
+@import "./layouts/footer";
 
 

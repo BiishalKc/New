@@ -1,4 +1,7 @@
 
+.asko-temperature-precise-cooking-about{
+    background-color: $thirdColor;
+}
 
 .asko-temperature-precise-cooking-image{
     img{ 
@@ -12,5 +15,17 @@
         left: 45rem;
         color: $secondaryColor;
         z-index: 1;
+        font-size: 20px;
+    }
+}
+
+.asko-temperature-precise-cooking-about-content{
+    display: flex;
+    h2{
+        flex: 1;
+    }
+    p{
+        flex: 4;
+        margin-right: 15%;
     }
 }
