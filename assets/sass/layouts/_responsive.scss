@@ -1,0 +1,141 @@
+@media only screen and (max-width:1200px) {
+    .asko-images-gallery {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:1100px) {
+    .asko-temperature-precise-cooking-image {
+        p {
+            top: 0px;
+            left: 25%;
+        }
+    }
+
+    .asko-about-us-columns {
+        width: 90%;
+    }
+
+    .asko-guided-recipes {
+        img {
+            width: 50vw;
+        }
+    }
+
+    .asko-premium-induction {
+        img {
+            width: 50vw;
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    .asko-about-us-columns {
+        @include flexwrap;
+        width: 100%;
+    }
+    nav {
+        position: fixed;
+        background-color: $secondaryColor;
+        width: 100%;
+        z-index: 1;
+
+        .menu-btn i {
+            display: block;
+            font-size: 30px;
+        }
+
+         ul {
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            background-color: $secondaryColor;
+            height: 100vh;
+            width: 100%;
+            padding-left: 10%;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        li {
+            width: 100%;
+            margin: 40px 0px;
+        }
+
+        a {
+            width: 100%;
+            margin-left: -100%;
+            display: block;
+            font-size: 20px;
+            transition: 0.6s;
+        }
+
+        #click:checked~.menu-btn i:before {
+            content: '\f00d';
+        }
+
+        #click:checked~ul {
+            left: 0px;
+        }
+
+        #click:checked~ul li a {
+            margin-left: 0px;
+        }
+        .SE{
+            display: none;
+        }
+}
+}
+
+@media only screen and (max-width:650px) {
+
+    .asko-guided-recipes {
+        display: block;
+
+        .asko-guided-recipes-image {
+            img {
+                width: 100vw;
+            }
+
+            p {
+                top: 0px;
+                left: 30%;
+                width: 40%;
+                color: $primaryColor;
+            }
+        }
+
+        .asko-guided-recipes-content {
+            margin: 10%;
+        }
+    }
+
+    .asko-premium-induction {
+        display: flex;
+        flex-wrap: wrap-reverse;
+
+        .asko-premium-induction-image {
+            padding-bottom: 40px;
+
+            img {
+                width: 100vw;
+            }
+
+            p {
+                top: 0px;
+                left: 30%;
+                width: 40%;
+
+            }
+        }
+    }
+
+    .asko-technology-content {
+        p{
+            width: 100%;
+        }
+    }
+
+}

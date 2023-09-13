@@ -10,13 +10,13 @@
         object-fit: cover;
     }
     p{
-        display: inline-block;
         position: absolute;
-        top: 25rem;
-        left: 35rem;
+        top: 70%;
+        left: 30%;
+        width: 17%;
+        text-align: center;
         color: $secondaryColor;
         font-size: 20px;
-        z-index: 1;
     }
 }
 

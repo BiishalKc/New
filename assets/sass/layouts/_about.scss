@@ -20,7 +20,7 @@
 }
 
 .asko-download-link-box{
-    width: 50%;
+    width: 700px;
     margin-top: 40px;
     padding: 30px 30px;
     background-color: $thirdColor;
@@ -33,9 +33,10 @@
 .asko-download-link{
     display: flex;
     padding-top: 10px;
-    align-items: center;  
+    align-items: center;
+    gap: 5px; 
     img{
-        padding-left: 10px;
+        max-width: 100%;
     }
 }
 

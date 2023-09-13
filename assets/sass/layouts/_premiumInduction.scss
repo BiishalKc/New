@@ -22,12 +22,12 @@
         object-fit: cover;
     }
     p{
-        display: inline-block;
         position: absolute;
-        top: 15rem;
-        left: 40rem;
+        top: 40%;
+        right: 25%;
+        width: 18%;
+        text-align: center;
         color: $secondaryColor;
         font-size: 20px;
-        z-index: 1;
     }
 }

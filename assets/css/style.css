@@ -13,6 +13,25 @@
   padding: 50px 0;
 }
 
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background-color: #111;
+  right: 30px;
+  bottom: 20px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  border-radius: 5px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -29,6 +48,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  padding-right: 15%;
 }
 nav li {
   margin: 0 8px;
@@ -36,7 +56,15 @@ nav li {
 nav a {
   text-decoration: none;
   color: #111;
-  padding: 8px 15px;
+  padding: 8px 10px;
+}
+nav .menu-btn i {
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav input[type=checkbox] {
+  display: none;
 }
 
 .asko-main-banner img {
@@ -66,7 +94,7 @@ nav a {
 }
 
 .asko-download-link-box {
-  width: 50%;
+  width: 700px;
   margin-top: 40px;
   padding: 30px 30px;
   background-color: #e8e8e8;
@@ -80,27 +108,32 @@ nav a {
   display: flex;
   padding-top: 10px;
   align-items: center;
+  gap: 5px;
 }
 .asko-download-link img {
-  padding-left: 10px;
+  max-width: 100%;
 }
 
-.asko-temperature-precise-cooking-about {
-  background-color: #e8e8e8;
+.asko-temperature-precise-cooking {
+  position: relative;
 }
 
 .asko-temperature-precise-cooking-image img {
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 .asko-temperature-precise-cooking-image p {
-  display: inline-block;
-  position: relative;
-  top: 16rem;
-  left: 45rem;
+  position: absolute;
   color: #fff;
-  z-index: 1;
   font-size: 20px;
+  top: 50%;
+  left: 60%;
+  text-align: center;
+}
+
+.asko-temperature-precise-cooking-about {
+  background-color: #e8e8e8;
 }
 
 .asko-temperature-precise-cooking-about-content {
@@ -125,13 +158,13 @@ nav a {
   object-fit: cover;
 }
 .asko-guided-recipes-image p {
-  display: inline-block;
   position: absolute;
-  top: 25rem;
-  left: 35rem;
+  top: 70%;
+  left: 30%;
+  width: 17%;
+  text-align: center;
   color: #fff;
   font-size: 20px;
-  z-index: 1;
 }
 
 .asko-guided-recipes-content .browse-recipes-btn {
@@ -170,13 +203,13 @@ nav a {
   object-fit: cover;
 }
 .asko-premium-induction-image p {
-  display: inline-block;
   position: absolute;
-  top: 15rem;
-  left: 40rem;
+  top: 40%;
+  right: 25%;
+  width: 18%;
+  text-align: center;
   color: #fff;
   font-size: 20px;
-  z-index: 1;
 }
 
 .asko-technology-content {
@@ -184,11 +217,11 @@ nav a {
 }
 .asko-technology-content p {
   padding-top: 25px;
-  width: 65%;
+  width: 65vw;
 }
 .asko-technology-content img {
   max-width: 100%;
-  margin-left: 14rem;
+  margin-left: 15%;
   object-fit: cover;
 }
 
@@ -204,28 +237,28 @@ nav a {
 .asko-celsius-cooking-image {
   display: block;
   position: relative;
-  height: 100vh;
+  height: 700px;
 }
 .asko-celsius-cooking-image .image1 {
   position: absolute;
-  width: 550px;
+  max-width: 510px;
   height: 300px;
   top: 10px;
   left: 0px;
 }
 .asko-celsius-cooking-image .image2 {
   position: absolute;
-  width: 550px;
+  max-width: 510px;
   height: 300px;
   top: 320px;
   left: 0px;
 }
 .asko-celsius-cooking-image .image3 {
   position: absolute;
-  width: 550px;
+  max-width: 550px;
   height: 610px;
   top: 10px;
-  left: 560px;
+  left: 520px;
 }
 
 .asko-start-celsius-cooking p {
@@ -253,6 +286,115 @@ footer p {
 footer a {
   text-decoration: none;
   color: #111;
+}
+
+@media only screen and (max-width: 1200px) {
+  .asko-images-gallery {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .asko-temperature-precise-cooking-image p {
+    top: 0px;
+    left: 25%;
+  }
+  .asko-about-us-columns {
+    width: 90%;
+  }
+  .asko-guided-recipes img {
+    width: 50vw;
+  }
+  .asko-premium-induction img {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .asko-about-us-columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  nav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+  }
+  nav .menu-btn i {
+    display: block;
+    font-size: 30px;
+  }
+  nav ul {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    padding-left: 10%;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  nav li {
+    width: 100%;
+    margin: 40px 0px;
+  }
+  nav a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s;
+  }
+  nav #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav #click:checked ~ ul {
+    left: 0px;
+  }
+  nav #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav .SE {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .asko-guided-recipes {
+    display: block;
+  }
+  .asko-guided-recipes .asko-guided-recipes-image img {
+    width: 100vw;
+  }
+  .asko-guided-recipes .asko-guided-recipes-image p {
+    top: 0px;
+    left: 30%;
+    width: 40%;
+    color: #111;
+  }
+  .asko-guided-recipes .asko-guided-recipes-content {
+    margin: 10%;
+  }
+  .asko-premium-induction {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .asko-premium-induction .asko-premium-induction-image {
+    padding-bottom: 40px;
+  }
+  .asko-premium-induction .asko-premium-induction-image img {
+    width: 100vw;
+  }
+  .asko-premium-induction .asko-premium-induction-image p {
+    top: 0px;
+    left: 30%;
+    width: 40%;
+  }
+  .asko-technology-content p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
