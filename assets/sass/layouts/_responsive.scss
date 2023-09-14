@@ -6,12 +6,6 @@
 
 
 @media only screen and (max-width:1100px) {
-    .asko-temperature-precise-cooking-image {
-        p {
-            top: 0px;
-            left: 25%;
-        }
-    }
 
     .asko-about-us-columns {
         width: 90%;
@@ -36,6 +30,7 @@
         @include flexwrap;
         width: 100%;
     }
+
     nav {
         position: fixed;
         background-color: $secondaryColor;
@@ -47,15 +42,15 @@
             font-size: 30px;
         }
 
-         ul {
+        ul {
             position: fixed;
+            display: block;
             top: 70px;
             left: -100%;
             background-color: $secondaryColor;
             height: 100vh;
             width: 100%;
             padding-left: 10%;
-            display: block;
             transition: all 0.3s ease;
         }
 
@@ -83,13 +78,30 @@
         #click:checked~ul li a {
             margin-left: 0px;
         }
-        .SE{
+
+        .SE {
             display: none;
         }
-}
+    }
 }
 
 @media only screen and (max-width:650px) {
+
+
+    .asko-temperature-precise-cooking-image {
+        p {
+            top: 0px;
+            left: 25%;
+        }
+    }
+
+    .asko-temperature-precise-cooking-about-content {
+        display: block;
+
+        h2 {
+            padding-bottom: 4%;
+        }
+    }
 
     .asko-guided-recipes {
         display: block;
@@ -133,9 +145,18 @@
     }
 
     .asko-technology-content {
-        p{
+        p {
             width: 100%;
         }
     }
+}
 
+@media only screen and (max-width:450px) {
+
+    .asko-temperature-precise-cooking-image {
+        p {
+            top: 0px;
+            left: 15%;
+        }
+    }
 }
